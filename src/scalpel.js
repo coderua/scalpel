@@ -34,7 +34,7 @@ class Scalpel {
   #target;
 
   /**
-   * Scalper constructor
+   * Scalpel constructor
    *
    * @param {BladeContainer|BladeContainerOptions|{}|undefined} [bladeContainerOrOptions=undefined]
    */

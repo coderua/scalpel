@@ -52,17 +52,17 @@ describe('Tests Scalpel class instantiating', () => {
 
   test('it can set url for finding a proper blade', () => {
     const url = '/api/login';
-    const scalper = new Scalpel().setUrl(url);
+    const scalpel = new Scalpel().setUrl(url);
 
-    expect(scalper.getUrl()).toBe(url);
+    expect(scalpel.getUrl()).toBe(url);
   });
 
   test('it can set req/res property for data cutting', () => {
-    const scalper = new Scalpel();
+    const scalpel = new Scalpel();
 
-    scalper.setTarget('body.services');
+    scalpel.setTarget('body.services');
 
-    expect(scalper.getTarget()).toBe('body.services');
+    expect(scalpel.getTarget()).toBe('body.services');
   });
 });
 
