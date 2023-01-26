@@ -1,8 +1,11 @@
 {
   "name": "@coder.ua/scalpel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "dist/scalpel.js",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "build": "babel --delete-dir-on-start --minified src -d dist --source-maps",
     "lint": "eslint --ext .js .",

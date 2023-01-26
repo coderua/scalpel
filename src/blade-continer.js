@@ -1,7 +1,7 @@
 const path = require('path');
 const glob = require('glob');
-const BladeContainerOptions = require('./blade-container-options').BladeContainerOptions;
-const BladeBox = require('./blade-box').BladeBox;
+const { BladeContainerOptions } = require('./blade-container-options');
+const { BladeBox } = require('./blade-box');
 
 class BladeContainer {
   /**

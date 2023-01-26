@@ -1,8 +1,8 @@
 /* eslint-disable class-methods-use-this, prefer-destructuring */
 
 const { BLADE_TYPE_REQUEST, BLADE_TYPE_RESPONSE } = require('./blade-types');
-const BladeContainer = require('./blade-continer').BladeContainer;
-const BladeContainerOptions = require('./blade-container-options').BladeContainerOptions;
+const { BladeContainer } = require('./blade-continer');
+const { BladeContainerOptions } = require('./blade-container-options');
 
 class Scalpel {
   #types = [BLADE_TYPE_REQUEST, BLADE_TYPE_RESPONSE];
