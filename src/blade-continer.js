@@ -1,5 +1,5 @@
 const path = require('path');
-const glob = require('glob');
+const { globSync } = require('glob');
 const { BladeContainerOptions } = require('./blade-container-options');
 const { BladeBox } = require('./blade-box');
 
@@ -69,7 +69,7 @@ class BladeContainer {
 
     const pattern = path.join(baseDir.startsWith('/') ? baseDir.substring(1) : baseDir, lookupGlobPattern);
 
-    glob.sync(pattern).forEach((mapFileName) => {
+    globSync(pattern).forEach((mapFileName) => {
       // Add BladeBox instance to the container
       this.#bladeBoxes.push(new BladeBox(require(`${appDir}/${mapFileName}`)));
     });

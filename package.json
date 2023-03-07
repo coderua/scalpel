@@ -1,7 +1,7 @@
 {
   "name": "@coder.ua/scalpel",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Node.js cutting/transformation tool for your requests or any other data structure in a customizable way",
   "main": "dist/index.js",
   "engines": {
     "node": ">=12"
@@ -16,7 +16,13 @@
     "pretest": "npm run lintfix",
     "test": "jest"
   },
-  "keywords": ["transformer", "logs", "middleware", "request", "response"],
+  "keywords": [
+    "transformer",
+    "logs",
+    "middleware",
+    "request",
+    "response"
+  ],
   "author": "Volodymyr Chumak <coder.ua@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -39,6 +45,6 @@
     "prettier": "^2.8.3"
   },
   "dependencies": {
-    "glob": "^8.1.0"
+    "glob": "^9.2.1"
   }
 }
