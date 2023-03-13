@@ -1,4 +1,5 @@
-const { Scalpel, Blade, BladeContainer, BladeContainerOptions, BladeBox, BladeTypes } = require('../src/index');
+import { Scalpel, Blade, BladeContainer, BladeContainerOptions, BladeBox, BladeTypes } from '../src/main';
+
 describe('Tests entry point file', () => {
   test('it should export Scalpel class', () => {
     expect(Scalpel).toBeInstanceOf(Function);

@@ -1,7 +1,6 @@
 /* eslint-disable prefer-destructuring */
-
-const Scalpel = require('../src/scalpel').Scalpel;
-const BladeContainer = require('../src/blade-continer').BladeContainer;
+import { Scalpel } from '../src/main';
+import { BladeContainer } from '../src/main';
 
 let req;
 let res;

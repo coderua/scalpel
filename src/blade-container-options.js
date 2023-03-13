@@ -1,4 +1,9 @@
-class BladeContainerOptions {
+/**
+ * Options for creating a BladeContainer instance
+ *
+ * @class BladeContainerOptions
+ */
+export default class BladeContainerOptions {
   /**
    * Default options
    *
@@ -113,5 +118,3 @@ class BladeContainerOptions {
     return this.toJSON();
   }
 }
-
-module.exports = { BladeContainerOptions };

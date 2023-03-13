@@ -1,7 +1,7 @@
 /* eslint-disable prefer-destructuring */
 
-const BladeContainer = require('../src/blade-continer').BladeContainer;
-const BladeBox = require('../src/blade-box').BladeBox;
+import { BladeContainer } from '../src/main';
+import { BladeBox } from '../src/main';
 
 describe('Tests BladeContainer class', () => {
   test('it should create the class instance without passing param in constructor', () => {

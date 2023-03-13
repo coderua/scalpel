@@ -16,6 +16,8 @@ $ npm install @coder.ua/scalpel
 
 ```javascript
 const { Scalpel } = require('@coder.ua/scalpel');
+// or
+// import { Scalpel } from '@coder.ua/scalpel';
 
 // By default will load all blades from `api/**/logger/request-blades/req` and `api/**/logger/request-blades/res` directories
 const scalpel = new Scalpel();
@@ -25,6 +27,8 @@ const scalpel = new Scalpel();
 
 ```javascript
 const { Scalpel } = require('@coder.ua/scalpel');
+// or
+// import { Scalpel } from '@coder.ua/scalpel';
 
 // Will load all blades from `api/**/logger/request-blades/req` and `api/**/logger/request-blades/res` directories
 const options = {
@@ -40,6 +44,8 @@ const scalpel = new Scalpel(options);
 
 ```javascript
 const { Scalpel, BladeContainerOptions } = require('@coder.ua/scalpel');
+// or
+// import { Scalpel, BladeContainerOptions } from '@coder.ua/scalpel';
 
 // Will load all blades from `api/**/logger/blades/*.bladebox.js` files
 const options = new BladeContainerOptions({
@@ -55,6 +61,9 @@ const scalpel = new Scalpel(options);
 
 ```javascript
 const { Scalpel, BladeContainer } = require('@coder.ua/scalpel');
+// or
+// import { Scalpel, BladeContainer } from '@coder.ua/scalpel';
+
 
 // Will load all blades from `api/**/logger/blades/*.bladebox.js` files
 const container = new BladeContainer({
@@ -84,6 +93,8 @@ const options = {
 
 ```javascript
 const { Scalpel } = require('@coder.ua/scalpel');
+// or
+// import { Scalpel } from '@coder.ua/scalpel';
 
 const scalpel = new Scalpel(options);
 

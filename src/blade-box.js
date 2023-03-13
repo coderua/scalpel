@@ -1,7 +1,7 @@
-const { isObject } = require('./utils/is-object');
-const { Blade } = require('./blade');
+import { Blade } from './main';
+import { isObject } from './utils/is-object';
 
-class BladeBox {
+export default class BladeBox {
   #bladeBox = {};
 
   /**
@@ -92,5 +92,3 @@ class BladeBox {
     );
   }
 }
-
-module.exports = { BladeBox };

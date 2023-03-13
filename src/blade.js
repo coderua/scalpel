@@ -1,7 +1,9 @@
-const { isObject } = require('./utils/is-object');
-const { BLADE_TYPE_REQUEST, BLADE_TYPE_RESPONSE } = require('./blade-types');
+import BladeTypes from './blade-types';
+import { isObject } from './utils/is-object';
 
-class Blade {
+const { BLADE_TYPE_RESPONSE, BLADE_TYPE_REQUEST } = BladeTypes;
+
+export default class Blade {
   /**
    * Blade
    *
@@ -103,8 +105,8 @@ class Blade {
       return [];
     }
 
-    return this.#blade.handlers.filter((handler) => this.#blade.type === type && this.#blade.target === target);
+    return this.#blade.handlers.filter(
+      (/** @type function */ handler) => this.#blade.type === type && this.#blade.target === target
+    );
   }
 }
-
-module.exports = { Blade };

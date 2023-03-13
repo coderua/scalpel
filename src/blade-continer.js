@@ -1,9 +1,10 @@
+import { BladeContainerOptions } from './main';
+import { BladeBox } from './main';
+
 const path = require('path');
 const { globSync } = require('glob');
-const { BladeContainerOptions } = require('./blade-container-options');
-const { BladeBox } = require('./blade-box');
 
-class BladeContainer {
+export default class BladeContainer {
   /**
    * Blade boxes
    *
@@ -102,5 +103,3 @@ class BladeContainer {
     return this.#bladeBoxes.map((bladeBox) => bladeBox.blades(url, type, target)).flat();
   }
 }
-
-module.exports = { BladeContainer };

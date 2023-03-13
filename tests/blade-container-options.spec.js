@@ -1,6 +1,6 @@
 /* eslint-disable prefer-destructuring */
 
-const BladeContainerOptions = require('../src/blade-container-options').BladeContainerOptions;
+import { BladeContainerOptions } from '../src/main';
 
 describe('Tests BladeContainerOptions class', () => {
   const defaultOptions = Object.freeze({

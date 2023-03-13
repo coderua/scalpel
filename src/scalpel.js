@@ -1,10 +1,12 @@
 /* eslint-disable class-methods-use-this, prefer-destructuring */
 
-const { BLADE_TYPE_REQUEST, BLADE_TYPE_RESPONSE } = require('./blade-types');
-const { BladeContainer } = require('./blade-continer');
-const { BladeContainerOptions } = require('./blade-container-options');
+import { BladeContainer } from './main';
+import { BladeContainerOptions } from './main';
+import BladeTypes from './blade-types';
 
-class Scalpel {
+const { BLADE_TYPE_REQUEST, BLADE_TYPE_RESPONSE } = BladeTypes;
+
+export default class Scalpel {
   #types = [BLADE_TYPE_REQUEST, BLADE_TYPE_RESPONSE];
 
   /**
@@ -152,5 +154,3 @@ class Scalpel {
     return reqOrRes.req ? BLADE_TYPE_RESPONSE : BLADE_TYPE_REQUEST;
   }
 }
-
-module.exports = { Scalpel };

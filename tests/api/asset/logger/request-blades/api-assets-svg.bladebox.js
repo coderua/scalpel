@@ -1,4 +1,6 @@
-const { BLADE_TYPE_REQUEST, BLADE_TYPE_RESPONSE } = require('../../../../../src/blade-types');
+import { BladeTypes } from '../../../../../src/main';
+
+const { BLADE_TYPE_REQUEST, BLADE_TYPE_RESPONSE } = BladeTypes;
 
 /**
  * Example of BladeBox file with blades for both request and response (req/res) in one file.
