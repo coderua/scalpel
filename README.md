@@ -64,7 +64,6 @@ const { Scalpel, BladeContainer } = require('@coder.ua/scalpel');
 // or
 // import { Scalpel, BladeContainer } from '@coder.ua/scalpel';
 
-
 // Will load all blades from `api/**/logger/blades/*.bladebox.js` files
 const container = new BladeContainer({
   autoLoadBlades: true,
